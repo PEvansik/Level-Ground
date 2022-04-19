@@ -7,75 +7,15 @@ html {
     font: 65%;
 }
 .container {
-    height: auto;
-    color: #fff;
-}
 
+}
 .navbar {
-    padding: 0 50px;
-    min-height: 70px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo {
-    width: 40px;
-    height: 40px;
-}
-li {
-    list-style-type: none;
-}
 
+    border: 1px solid green;
+
+}
 .hamburger {
     display: none;
-    height: 30px;
-    width: 29px;
-    cursor: pointer;
-}
-.ham {
-    width: 25px;
-    border-radius: 3px;
-    background-color: black;
-    height: 3px;
-    display: block;
-    margin: 5px auto;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;;
-}
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    
-}
-.menu li a, .navbar>a {
-    transition: .7s ease;
-    color: #fff;
-}
-.menu li a:hover, .navbar>a:hover {
-    color: #DF912E;
-}
-.navbar>a {
-    color: #4E5660;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-header {
-    text-align: center;
-    width: 80%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-header h1 {
-    font-size: 2rem;
-    padding-bottom: 20px;
 }
 
 /*=========================================================
@@ -86,84 +26,42 @@ header h1 {
 @media only screen and (min-width:0px) {
     .container {
         height: auto;
-        background-image: url(../asset/logo-icon-mobile.jpg);
-        background-size: cover;
-        background-position: center;
     }
-    nav > a {
-        
+    .navbar {
+        height: 70px;
+        border: 1px solid green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
     }
-    .menu {
-        display: none;
-    }
-    .logo {
-        width: 15px;
-        height: 15px;
-    }
-    header h1 {
-        font-size: 1rem;
-        padding-bottom: 20px;
-    }
-
-}
-
-@media only screen and (max-width:768px ) {
-    .menu {
-        display: none;
-    }
+    
     .hamburger {
         display: block;
+        width: 28px;
+        height: 20px;
+        border: 1px solid green;
     }
-    .hamburger.active .ham:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+    .ham {
+   
+        border: 1px solid green;
+        color: brown;
+        margin: 1px;
     }
-    .hamburger.active .ham:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .ham:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .menu {
-        display: block;
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: gray;
-        color: black;
-        width: 100%;
-        text-align: center;
-        border-radius: 0 0 15px 15px;
-        transition: 0.3s;
-    }
-    .menu.active {
-        left: 0;
-    }
-    .menu li {
-        margin: 16px 0;
-    }
-    header h1 {
-        font-size: 1.5rem;
-        padding-bottom: 20px;
-    }
-    header p {
-        font-size: 1rem;
-        padding-bottom: 20px;
-    }
-    .container {
-        background-image: url(../asset/ninja-g047b3e4ec_640.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    
-    }
-}
-@media only screen and (min-width:768px) {
+
     .logo {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: auto;
     }
+
 }
+
+
+@media only screen and (min-width:768px ) {
+
+
+}
+
 @media only screen and (min-width:1024px) {
 
 }
