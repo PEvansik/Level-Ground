@@ -7,13 +7,10 @@ html {
     font: 65%;
 }
 .container {
-    background-image: url(../asset/ninja-g047b3e4ec_640.jpg);
-    background-size: cover;
-    height: 100vh;
+    height: auto;
     color: #fff;
-    background-repeat: no-repeat;
-
 }
+
 .navbar {
     padding: 0 50px;
     min-height: 70px;
@@ -80,20 +77,21 @@ header h1 {
     font-size: 2rem;
     padding-bottom: 20px;
 }
-header a {
-    text-decoration: none;
-    color: #fff;
-}
 
 /*=========================================================
 
 ***********************MEDIA QUERIES***********************
 
 ============================================================*/
-@media only screen and (max-width:425) {
+@media only screen and (min-width:0px) {
     .container {
+        height: auto;
         background-image: url(../asset/logo-icon-mobile.jpg);
         background-size: cover;
+        background-position: center;
+    }
+    nav > a {
+        
     }
     .menu {
         display: none;
@@ -151,6 +149,13 @@ header a {
     header p {
         font-size: 1rem;
         padding-bottom: 20px;
+    }
+    .container {
+        background-image: url(../asset/ninja-g047b3e4ec_640.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
     }
 }
 @media only screen and (min-width:768px) {
