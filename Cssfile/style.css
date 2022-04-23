@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 html {
-    font: 65%;
+    font-size: 65%;
+    font-family: 'Poppins', sans-serif;
 }
-.container {
+.container::before {
+    width: 100%;
+    height: 100%;
+    color: black;
 
 }
 .navbar {
@@ -16,11 +20,43 @@ html {
     align-items: center;
     border: 1px solid green;
     padding: 0 5%;
+    //background-color: rgba(0, 0, 0, 0.5);
+}
+.section-one {
+    //background-color: rgba(0, 0, 0, 0.5);
 }
 .hamburger {
     display: none;
     cursor: pointer;
+
 }
+.navbar a {
+    text-decoration: none;
+}
+.navbar > a {
+    color: #ffa500;
+    padding: 5px;
+    border-radius: 3px;
+}
+.navbar > a:hover {
+    color: #000;
+    background-color: #ffa500;
+    transition: .3s ease-in-out;
+    -webkit-transition:.3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+.ham {
+    display: block;
+    width: 25px;
+    height: 4px;
+    border: 1px solid #9bae9b;
+    margin: 3px auto;
+    transition: .3s ease-in-out;
+    -webkit-transition:.3s ease-in-out;
+    background: #ffa500;
+    border-radius: 3px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -43,25 +79,35 @@ html {
     .container {
         height: 100vh;
         border: 1px solid green;
-    }    
+        background-image: url(../asset/martial-arts-left-m.jpg);
+        background-size: cover;
+        background-position: center center;
+    }   
+    /* 
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+    }
+    */
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .navbar a {
+        font-size: 1.3rem;
+    }
     .hamburger {
         display: block;
         width: 28px;
         height: 25px;
         border: 1px solid green;
     }
-    .ham {
-        display: block;
-        width: 25px;
-        height: 4px;
-        border: 1px solid green;
-        margin: 3px auto;
-        transition: .3s ease-in-out;
-        background: green;
-        border-radius: 3px;
-    }
+
     .hamburger.active .middle {
-        opacity: 0;
+        width: 0;
         transition: .3s ease-in-out;
     }
     .hamburger.active .top {
@@ -77,18 +123,115 @@ html {
         height: auto;
     }
     .menu {
-        position: relative;
-        display: none;
-        top: 45px;
+        position: fixed;
+        top: 50px;
         border: 1px solid green;
-        left: -100px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        background-color: #000;
+        color: #ffa500;
+        transition: .4s ease-in-out;
+        background-color: rgba(0, 0, 0, 0);
     }
     .menu.active {
         display: block;
-        transition: .8s ease-in-out;
         left: 0;
     }
+    .menu li {
+        padding: 5px;
+    }
 
+
+    /*===========================================
+    ================ SECTION 1 ===================
+    =============================================*/
+
+    .section-one {
+        padding: 40px 40px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+
+    }
+    .section-one a:hover {
+        background-color: #ffa500;
+        color: #000;
+    }
+    h1 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.34m;
+    }
+    .section-one p {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 20px 0;
+        line-height: 2rem; 
+    }
+    /*
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    */
+    .section-one a {
+        display: block;
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 20px;
+        text-decoration: none;
+        color: #ffa500;
+    }
+    .section-one a i {
+        padding: 0 5px;
+    }
+
+    /*===========================================
+    ================ SECTION 2 ===================
+    =============================================*/
+    .second-section {
+        padding: 40px 40px;
+ 
+    }
+    .second-section h2 {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .second-section p {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 20px 0;
+        line-height: 2rem; 
+    }
+
+    /*===========================================
+    ================ SECTION 3 ==================
+    =============================================*/
+    .third-section {
+        padding: 20px;
+    }
+    .third-section img {
+        width: 100%;
+        height: auto;
+    }
+    .third-section-left,
+    .third-section-right {
+        margin: 40px 0;
+    }
+    .third-section * {
+        padding-bottom: 20px;
+    }
+    .third-section h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    .third-section p {
+        font-size: 1.2rem;
+    }
 }
 
 
