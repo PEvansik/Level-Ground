@@ -7,23 +7,29 @@ html {
     font-size: 65%;
     font-family: 'Poppins', sans-serif;
 }
+.navbar, .section-one {
+    z-index: 1;
+}
 .container::before {
-    width: 100%;
-    height: 100%;
-    color: black;
-
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.container::before {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 .navbar {
-    height: 50px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid green;
     padding: 0 5%;
-    //background-color: rgba(0, 0, 0, 0.5);
+
 }
 .section-one {
-    //background-color: rgba(0, 0, 0, 0.5);
+
 }
 .hamburger {
     display: none;
@@ -75,26 +81,23 @@ html {
 ***********************MEDIA QUERIES***********************
 
 ============================================================*/
-@media only screen and (min-width:0px) {
+@media only screen and (min-device-width:0px) {
     .container {
-        height: 100vh;
         border: 1px solid green;
-        background-image: url(../asset/martial-arts-left-m.jpg);
-        background-size: cover;
-        background-position: center center;
     }   
-    /* 
-    .container::after {
-        content: '';
+
+
+    .container .header-background {
         position: absolute;
-        width: 100%;
+        z-index: -2;
+        max-width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 0;
+        object-fit: cover;
+        object-position: center;
+        inset: 0;
     }
-    */
     .navbar {
-        background-color: rgba(0, 0, 0, 0.6);
+        height: 10vh;
     }
     .navbar a {
         font-size: 1.3rem;
@@ -150,9 +153,8 @@ html {
 
     .section-one {
         padding: 40px 40px;
-        background-color: rgba(0, 0, 0, 0.6);
         color: white;
-
+        height: 90vh;
     }
     .section-one a:hover {
         background-color: #ffa500;
@@ -212,15 +214,20 @@ html {
     ================ SECTION 3 ==================
     =============================================*/
     .third-section {
-        padding: 20px;
+        border: 1px solid #9bae9b;
+        padding: 0 15px;
     }
     .third-section img {
-        width: 100%;
+        border-radius: 5px;
+        max-width: 100%;
         height: auto;
+        padding-bottom: 0;
+        margin: 0 auto;
+        display: block;
     }
     .third-section-left,
     .third-section-right {
-        margin: 40px 0;
+        margin: 30px 0;
     }
     .third-section * {
         padding-bottom: 20px;
@@ -228,10 +235,63 @@ html {
     .third-section h3 {
         font-size: 1.5rem;
         text-transform: uppercase;
+        padding-top: 20px;
     }
     .third-section p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
+    .top-article,
+    .bottom-article {
+        text-align: center;
+    }
+    .top-article a,
+    .bottom-article a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #9bae9b;
+        border: 1px solid #9bae9b;
+        border-radius: 3px;
+        padding: 5px 5px;
+    }
+    
+    /*===========================================
+    ================ SECTION 4 ==================
+    =============================================*/
+    .fourth-section {
+        padding: 10px 15px 30px 15px;
+        text-align: center;
+        margin:  0;
+        border: 1px solid #9bae9b;
+    }
+    .fourth-section h2 {
+        font-size: 2rem;
+        padding: 20px 0;
+        text-transform: uppercase;
+    }
+    .fourth-section p {
+        font-size: 1.3rem;
+        padding: 10px 0 20px;
+    }
+    .fourth-section a {
+        display: block;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 0 70px;
+        border: 1px solid #9bae9b;
+        text-decoration: none;
+        color: #9bae9b;
+        border-radius: 3px;
+        padding: 5px 5px;
+    }
+
+
+    /*===========================================
+    ================ FOOTER ==================
+    =============================================*/
+    .footer
+    .footer > section 
+    .socials
+    
 }
 
 
