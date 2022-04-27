@@ -4,37 +4,54 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 65%;
+    font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 }
-.navbar, .section-one {
-    z-index: 1;
+header {
+    background-image: url('../asset/martial-arts-left.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    height: 100vh;
 }
+/*
+.container::before {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+*/
+.section-one {
+    background: rgba(0, 0, 0, .4);
+    height: 90%;
+}
+/*
 .container::before {
     content: "";
     position: absolute;
     inset: 0;
-}
-.container::before {
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
+}*/
+/*.container::before {
+    
+    z-index: 0;
+}*/
 .navbar {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid green;
     padding: 0 5%;
-
+    background: rgba(0, 0, 0, .7);
+    height: 10%;
 }
-.section-one {
 
-}
 .hamburger {
     display: none;
     cursor: pointer;
-
 }
 .navbar a {
     text-decoration: none;
@@ -76,6 +93,16 @@ html {
     transition: .7s ease;
     color: #ffa500;
 }
+h1 {
+    font-size: clamp(2rem, 0.6364rem + 4.2614vw, 5rem);;
+}
+.section-one p {
+    font-size: clamp(1.4rem, 1.1727rem + 0.7102vw, 1.9rem);
+    line-height: clamp(2rem, 1.0909rem + 2.8409vw, 4rem);
+    padding: clamp(2rem, 1.0909rem + 2.8409vw, 4rem);
+    margin-top: clamp(2rem, 1.0909rem + 2.8409vw, 4rem);
+}
+
 /*=========================================================
 
 ***********************MEDIA QUERIES***********************
@@ -90,14 +117,14 @@ html {
     .container .header-background {
         position: absolute;
         z-index: -2;
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
+    
         object-fit: cover;
         object-position: center;
         inset: 0;
     }
     .navbar {
-        height: 10vh;
+        height: 50px;
     }
     .navbar a {
         font-size: 1.3rem;
@@ -154,7 +181,7 @@ html {
     .section-one {
         padding: 40px 40px;
         color: white;
-        height: 90vh;
+
     }
     .section-one a:hover {
         background-color: #ffa500;
@@ -163,21 +190,14 @@ html {
     h1 {
         margin-top: 15px;
         text-align: center;
-        font-size: 2rem;
         line-height: 1.34m;
     }
     .section-one p {
         text-align: center;
-        font-size: 1.3rem;
         padding: 20px 0;
         line-height: 2rem; 
     }
-    /*
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-    */
+
     .section-one a {
         display: block;
         text-align: center;
@@ -205,7 +225,6 @@ html {
     }
     .second-section p {
         text-align: center;
-        font-size: 1.3rem;
         padding: 20px 0;
         line-height: 2rem; 
     }
@@ -237,7 +256,7 @@ html {
         padding-top: 20px;
     }
     .third-section p {
-        font-size: 1.3rem;
+
     }
     .top-article,
     .bottom-article {
@@ -267,7 +286,6 @@ html {
         text-transform: uppercase;
     }
     .fourth-section p {
-        font-size: 1.3rem;
         padding: 10px 0 20px;
     }
     .fourth-section a {
@@ -350,7 +368,7 @@ html {
     }
     .section-one a {
         display: block;
-        margin-top: 20px;
+
         text-align: center;
         font-size: 1.6rem;
         padding: 20px;
@@ -433,9 +451,9 @@ html {
     =============================================*/
 
     .section-one {
-        padding: 40px 80px;
+        padding: 40px 40px;
         color: white;
-        height: 90vh;
+        height: 90%;
     }
     .section-one a:hover {
         background-color: #ffa500;
@@ -444,20 +462,17 @@ html {
     h1 {
         margin-top: 15px;
         text-align: center;
-        font-size: 4rem;
         line-height: 1.34m;
     }
     .section-one p {
         text-align: center;
-        font-size: 1.8rem;
-        padding: 20px 0;
         line-height: 3rem; 
     }
     .section-one a {
         display: block;
         text-align: center;
         font-size: 1.6rem;
-        padding-top: 20px;
+        padding-top: 10px;
         text-decoration: none;
         color: #ffa500;
     }
@@ -480,7 +495,7 @@ html {
     }
     .second-section p {
         text-align: center;
-        font-size: 1.3rem;
+
         padding: 20px 0;
         line-height: 2rem; 
     }
@@ -511,9 +526,6 @@ html {
         text-transform: uppercase;
         padding-top: 20px;
     }
-    .third-section p {
-        font-size: 1.3rem;
-    }
     .top-article,
     .bottom-article {
         text-align: center;
@@ -542,7 +554,7 @@ html {
         text-transform: uppercase;
     }
     .fourth-section p {
-        font-size: 1.3rem;
+
         padding: 10px 0 20px;
     }
     .fourth-section a {
