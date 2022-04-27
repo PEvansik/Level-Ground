@@ -96,9 +96,14 @@ h1 {
 .section-one .watch a{
     border-radius: 5px;
     padding: 5px;
+    text-decoration: none;
+    color: #ffa500;
 }
 .section-one .watch a:hover {
     color: #000;
+}
+.section-one .watch a i {
+    padding: 0 5px;
 }
 
 /*=========================================================
@@ -176,28 +181,13 @@ h1 {
     .section-one {
         padding: 40px 40px;
         color: white;
-
     }
     h1 {
         margin-top: 15px;
         text-align: center;
         line-height: 1.34m;
     }
-/*
-    .section-one p {
-        text-align: center;
-        padding: 20px 0;
-        line-height: 2rem; 
-    }*/
 
-    .section-one a {
-        text-decoration: none;
-        color: #ffa500;
-    }
-
-    .section-one a i {
-        padding: 0 5px;
-    }
 
     /*===========================================
     ================ SECTION 2 ===================
@@ -212,17 +202,13 @@ h1 {
         font-size: 2rem;
         text-transform: uppercase;
     }
-    .second-section p {
-        text-align: center;
-        padding: 20px 0;
-        line-height: 2rem; 
-    }
+
 
     /*===========================================
     ================ SECTION 3 ==================
     =============================================*/
     .third-section {
-        padding: 0 15px;
+        padding: 0 20px;
     }
     .third-section img {
         border-radius: 5px;
@@ -265,7 +251,7 @@ h1 {
     ================ SECTION 4 ==================
     =============================================*/
     .fourth-section {
-        padding: 10px 15px 30px 15px;
+        padding: 0px 20px;
         text-align: center;
         margin:  0;
     }
@@ -336,24 +322,10 @@ h1 {
     }
 
 }
-
 @media only screen and (min-width:421px ) {
-    .section-one {
-        padding: 40px 60px;
-        color: white;
-        height: 90vh;
-    }
-    h1 {
-    }
-    .section-one p {
-        text-align: center;
-        padding: 30px 0;
-        line-height: 2rem; 
-    }
-    .section-one a i {
-        padding: 0 5px;
-    }
+    
 }
+
 
 @media only screen and (min-width:721px ) {
     
@@ -364,16 +336,6 @@ h1 {
     .section-one {
 
         color: white;
-    }
-
-    h1 {
-        margin-top: 15px;
-        text-align: center;
-        line-height: 1.34m;
-    }
-    .section-one p {
-        text-align: center;
-        line-height: 3rem; 
     }
     .section-one .watch {
 
@@ -401,30 +363,24 @@ h1 {
         font-size: 2rem;
         text-transform: uppercase;
     }
-    .second-section p {
-        text-align: center;
 
-        padding: 20px 0;
-        line-height: 2rem; 
-    }
 
     /*===========================================
     ================ SECTION 3 ==================
     =============================================*/
     .third-section {
         padding: 0 15px;
+
     }
     .third-section img {
         border-radius: 5px;
-        max-width: 100%;
-        height: auto;
+        width: 50%;
         padding-bottom: 0;
-        margin: 0 auto;
-        display: block;
     }
     .third-section-left,
     .third-section-right {
         margin: 30px 0;
+        display: flex;
     }
     .third-section * {
         padding-bottom: 20px;
