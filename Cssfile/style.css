@@ -55,7 +55,6 @@ header {
     display: block;
     width: 25px;
     height: 4px;
-    border: 1px solid #9bae9b;
     margin: 3px auto;
     transition: .3s ease-in-out;
     -webkit-transition:.3s ease-in-out;
@@ -241,9 +240,10 @@ h1 {
     ================ SECTION 4 ==================
     =============================================*/
     .fourth-section {
-        padding: 0px 20px;
+        padding: 20px 30px 20px 30px;
         text-align: center;
         margin:  0;
+        height: auto;
     }
     .fourth-section h2 {
         font-size: 2rem;
@@ -252,16 +252,20 @@ h1 {
     }
     .fourth-section p {
         padding: 10px 0 20px;
+        margin: 0 ;
     }
-    .fourth-section a {
+    .fourth-link {
+        padding: 20px;
+    }
+    .fourth-link a {
         font-size: 1.3rem;
         text-transform: uppercase;
-        margin: 0 70px;
         border: 1px solid #9bae9b;
         text-decoration: none;
         color: #9bae9b;
         border-radius: 3px;
-        padding: 5px 5px;
+        margin-top: 10px;
+        
     }
 
 
