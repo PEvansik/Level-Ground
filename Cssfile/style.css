@@ -17,7 +17,7 @@ header {
 }
 
 .section-one {
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .5);
     height: 90%;
 }   .section-one a:hover {
     background-color: #ffa500;
@@ -27,7 +27,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid green;
     padding: 0 5%;
     background: rgba(0, 0, 0, .7);
     height: 10%;
@@ -69,7 +68,6 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-
 }
 .menu li {
     list-style: none;
@@ -114,9 +112,6 @@ h1 {
 
 ============================================================*/
 @media only screen and (min-device-width:0px) {
-    .container {
-        border: 1px solid green;
-    }
     .container .header-background {
         position: absolute;
         z-index: -2;
@@ -128,14 +123,11 @@ h1 {
     .navbar {
         height: 50px;
     }
-
     .hamburger {
         display: block;
         width: 28px;
         height: 25px;
-        border: 1px solid green;
     }
-
     .hamburger.active .middle {
         width: 0;
         transition: .3s ease-in-out;
@@ -152,7 +144,6 @@ h1 {
         width: 30px;
         height: auto;
     }
-
     .menu {
         position: fixed;
         top: 50px;
@@ -163,7 +154,8 @@ h1 {
         background-color: #000;
         color: #ffa500;
         transition: .4s ease-in-out;
-        background-color: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, .5);
+
     }
     .menu.active {
         display: block;
@@ -171,8 +163,8 @@ h1 {
     }
     .menu li {
         padding: 5px;
+        margin: 10px;
     }
-
 
     /*===========================================
     ================ SECTION 1 ===================
@@ -187,7 +179,6 @@ h1 {
         text-align: center;
         line-height: 1.34m;
     }
-
 
     /*===========================================
     ================ SECTION 2 ===================
@@ -341,10 +332,13 @@ h1 {
         color: #ffa500;
         justify-content: space-between;
         align-items: center;
-        width: 24%;
+        width: 25%;
+        background: rgba(0, 0, 0, 0);
     }
     .menu li {
         padding-left: 0;
+
+        margin: 0;
     }
     .logo {
         margin-right: 105px;
