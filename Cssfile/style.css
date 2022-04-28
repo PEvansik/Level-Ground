@@ -216,7 +216,6 @@ h1 {
         height: auto;
         padding-bottom: 0;
         margin: 0 auto;
-        display: block;
     }
     .third-section-left,
     .third-section-right {
@@ -264,7 +263,6 @@ h1 {
         padding: 10px 0 20px;
     }
     .fourth-section a {
-        display: block;
         font-size: 1.3rem;
         text-transform: uppercase;
         margin: 0 70px;
@@ -334,7 +332,6 @@ h1 {
     =============================================*/
 
     .section-one {
-
         color: white;
     }
     .section-one .watch {
@@ -368,22 +365,32 @@ h1 {
     /*===========================================
     ================ SECTION 3 ==================
     =============================================*/
+    
     .third-section {
         padding: 0 15px;
-
+        background-color: rgba(255, 166, 0, .3);
+    }
+    .tt-image, .tb-image {
+        width: 45%;
+        padding-bottom: 0;
+    }
+    .tb-image {
+        order: 2;
+    }
+    .bottom-article{
+        order: 1;
     }
     .third-section img {
         border-radius: 5px;
-        width: 50%;
+        width: 100%;
         padding-bottom: 0;
     }
     .third-section-left,
     .third-section-right {
         margin: 30px 0;
         display: flex;
-    }
-    .third-section * {
-        padding-bottom: 20px;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .third-section h3 {
         font-size: 1.5rem;
@@ -393,6 +400,11 @@ h1 {
     .top-article,
     .bottom-article {
         text-align: center;
+        width: 45%;
+    }
+    .top-article p,
+    .bottom-article p {
+        margin-top: 0;
     }
     .top-article a,
     .bottom-article a {
@@ -418,11 +430,14 @@ h1 {
         text-transform: uppercase;
     }
     .fourth-section p {
+        padding: 20px 40px;
+        margin-top: 0;
+        text-align: center;
+    }
+    .fourth-link {
 
-        padding: 10px 0 20px;
     }
     .fourth-section a {
-        display: block;
         font-size: 1.3rem;
         text-transform: uppercase;
         margin: 0 70px;
@@ -477,10 +492,11 @@ h1 {
     }
     .line {
         margin: 10px 0;
-    }*/
+    }
 
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1440px) {
+    
 
 }
