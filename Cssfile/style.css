@@ -69,6 +69,7 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
 }
 .menu li {
     list-style: none;
@@ -87,7 +88,8 @@ h1 {
     margin-top: clamp(2rem, 1.0909rem + 2.8409vw, 4rem);
     text-align: center;
 }
-.section-one .watch {
+.section-one .watch,
+.container a {
     text-align: center;
     font-size: clamp(1.4rem, 1.1727rem + 0.7102vw, 1.9rem);
     color: #ffa500;
@@ -126,9 +128,7 @@ h1 {
     .navbar {
         height: 50px;
     }
-    .navbar a {
-        font-size: 1.3rem;
-    }
+
     .hamburger {
         display: block;
         width: 28px;
@@ -152,10 +152,10 @@ h1 {
         width: 30px;
         height: auto;
     }
+
     .menu {
         position: fixed;
         top: 50px;
-        border: 1px solid green;
         left: -100%;
         width: 100%;
         flex-direction: column;
@@ -326,6 +326,30 @@ h1 {
 
 
 @media only screen and (min-width:721px ) {
+
+    /*===========================================
+    ================ NAVIGATION ===================
+    =============================================*/
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        inset: 0;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        color: #ffa500;
+        justify-content: space-between;
+        align-items: center;
+        width: 24%;
+    }
+    .menu li {
+        padding-left: 0;
+    }
+    .logo {
+        margin-right: 105px;
+    }
+
     
     /*===========================================
     ================ SECTION 1 ===================
@@ -497,6 +521,6 @@ h1 {
 }
 
 @media only screen and (min-width:1440px) {
-    
+
 
 }
